@@ -27,6 +27,10 @@ light_volumetric_fog_energy = 0.838
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 5, 0)
 disable_mode = 2
 script = ExtResource("1_kpvqs")
+offset = null
+rotation_speed = null
+movement_speed = null
+sensitivity = null
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_0ceav")
