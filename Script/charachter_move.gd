@@ -9,7 +9,7 @@ var pitch: float = 0.0  # Rotation around the X-axis (vertical)
 
 # Called when the node is added to the scene
 func _ready() -> void:
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)  # Lock the mouse pointer for first-person controls.
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)  # Lock the mouse pointer for first-person controls
 
 # Handles mouse input for looking around
 func _input(event: InputEvent) -> void:
