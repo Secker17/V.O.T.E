@@ -1,25 +1,25 @@
 [gd_scene load_steps=7 format=3 uid="uid://c8y24t4g5keyb"]
 
-[ext_resource type="Material" uid="uid://dykoxf2ufv6ko" path="res://node_2d.tres" id="1_7if86"]
-[ext_resource type="Script" path="res://character_body_3d.gd" id="2_sn77k"]
+[ext_resource type="Script" path="res://Script/character_body_3d.gd" id="1_6xkhl"]
+[ext_resource type="Material" uid="uid://dykoxf2ufv6ko" path="res://node_2d.tres" id="2_0ojoj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_alfey"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_icws6"]
-material = ExtResource("1_7if86")
+material = ExtResource("2_0ojoj")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_avy21"]
-material = ExtResource("1_7if86")
+material = ExtResource("2_0ojoj")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_l3lmd"]
-material = ExtResource("1_7if86")
+material = ExtResource("2_0ojoj")
 
 [node name="Enemy" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.265483, 0)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.105214, 0)
-script = ExtResource("2_sn77k")
+script = ExtResource("1_6xkhl")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
